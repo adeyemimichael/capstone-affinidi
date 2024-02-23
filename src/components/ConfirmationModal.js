@@ -1,12 +1,16 @@
-import React from 'react';
+
 import './Modal.css';
 
 const ConfirmationModal = ({ closeModal }) => {
+
+
   return (
     <div className="ModalOverlay">
       <div className="ConfirmationModal">
-        <p>Order submitted. Thank you for shopping with us!</p>
-        <button onClick={closeModal}>OK</button>
+        <h2>Order Submitted! </h2>
+        <p>Thank you for shopping with us. Your order is on its way!</p>
+        <button onClick={closeModal} className="PrimaryButton">OK</button>
+      
       </div>
     </div>
   );
